@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.link {
+    text-decoration: underline;
+    &:hover {
+        color: gray;
+    }
+}
+
+.hljs {
+    background-color: #f4f4f4 !important;
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +46,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */

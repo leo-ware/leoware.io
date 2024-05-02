@@ -1,0 +1,58 @@
+{
+    "Experience": [
+        {
+            "Company": "West Virginia University",
+            "Title": "Research Assistant",
+            "Location": "Morgantown, WV",
+            "Dates": "December 2023 - Present",
+            "Description": [
+                "Developed a custom model validation pipeline, proving that a published result overestimated model performance by 2x",
+                "Developed a multi-threaded implementation of proposed ML technique, showing 5x speedup in training time relative to a prototype",
+                "Improved on the design of the technique, leading to 30% improved fit",
+                "Improved training times on another key model by 30x by migrating to scikit-learn"
+            ]
+        },
+        {
+            "Company": "Carnegie Mellon University",
+            "Title": "Research Intern",
+            "Location": "Pittsburgh, PA",
+            "Dates": "June 2022 - August 2022",
+            "Description": [
+                "Developed a machine learning based tool for human in the loop extraction of web content",
+                "Built an intuitive web-based interface using Typescript/React/Firebase, making the tool available to non-technical users",
+                "Collaborated with the data science team on design of an LLM-based recommendation pipeline",
+                "Prepared a demo for a strategic partnership pitch to Firefox, the only intern selected to do so"
+            ]
+        },
+        {
+            "Company": "SoftBank",
+            "Title": "Software Engineer - Masason AI Incubator",
+            "Location": "San Francisco, CA",
+            "Dates": "June 2021 - August 2021",
+            "Description": [
+                "Developed a product pitch and received $20,000 in seed-stage grant funding from the SoftBank Masason AI fund",
+                "Coordinated a three-person team as head of front-end development, developing a project prototype in three months",
+                "Faced with performance issues, developed a custom data structure that cut render times by 90%",
+                "Iterated on product-market fit by conducting 5+ user-interviews, leading to a major pivot",
+                "Presented to the CEO of Deepcore and VP of SoftBank, resulting in continued funding for the project"
+            ]
+        }
+    ],
+    "Education": [
+        {
+            "Institution": "Minerva University",
+            "Degree": "Bachelor of Science in Data Science and Statistics",
+            "Location": "San Francisco, CA",
+            "Dates": "August 2019 - December 2023",
+            "Description": [
+                "GPA: 3.7/4.0",
+                "Honed software engineering and computational modeling skills with classes in Data Structure & Algorithms, Artificial Intelligence, Causal Inference & Machine Learning",
+                "Learned intercultural communication skills through the global rotation program, with six semesters abroad in seven countries"
+            ]
+        }
+    ],
+    "Awards": [
+        "National Merit Finalist",
+        "Eagle Scout"
+    ]
+}
