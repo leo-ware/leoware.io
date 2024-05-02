@@ -1,3 +1,5 @@
 import { redirect } from "next/navigation";
 
-export default () => redirect("/")
+const About = () => redirect("/")
+
+export default About

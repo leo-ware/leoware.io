@@ -20,10 +20,9 @@ export default function Home() {
     <div className="col-span-10 h-full flex flex-col sm:flex-row items-center justify-center">
         <Image src={MeSitting} alt="Me" className="w-48 sm:w-64  "/>
         <div className="max-w-96 max-h-32">
-            <div className="text-xl font-bold">Hi, I'm Leo</div>
+            <div className="text-xl font-bold">{"Hi, I'm Leo"}</div>
             <p>
-                I'm interested in causal inference and computational statistics.
-                I'm currently existing in an academic liminal space.
+                {"I'm interested in causal inference and computational statistics. I'm currently existing in an academic liminal space. "}
                 Check out my <Link className="link" href={"/projects"}>projects</Link> or reach out below.
             </p>
             <div className="flex flex-row">

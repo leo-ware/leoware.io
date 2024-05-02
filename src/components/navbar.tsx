@@ -22,8 +22,8 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div className="md:hidden w-4 h-6 align-end">
-                        {Array(5).fill(0).map(_ => (
-                            <div className="h-0.5 w-4 odd:bg-black br-1"/>
+                        {Array(5).fill(0).map(i => (
+                            <div key={i} className="h-0.5 w-4 odd:bg-black br-1"/>
                         ))}
                 </div>
             </div>

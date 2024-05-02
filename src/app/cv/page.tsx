@@ -3,8 +3,8 @@ import cv from "./cv.json"
 const Widget = ({ title, contents }: { title: string, contents: React.ReactNode[] }) => (
     <div className="grid grid-cols-subgrid col-span-8 my-2">
         <div className="col-start-2 col-span-6 text-lg font-bold mb-2">{title}</div>
-        {contents.map(exp => (
-            <div className="col-start-2 col-span-6 mb-4">
+        {contents.map((exp, i) => (
+            <div key={i} className="col-start-2 col-span-6 mb-4">
                 {exp}
             </div>
         ))}
@@ -31,7 +31,7 @@ const CV = () => {
                         <div className="ml-8">
                             <ul className="list-disc">
                                 {exp.Description.map(desc => (
-                                    <li className="text-sm">{desc}</li>
+                                    <li className="text-sm" key={desc}>{desc}</li>
                                 ))}
                             </ul>
                         </div>
@@ -53,7 +53,7 @@ const CV = () => {
                         <div className="ml-8">
                             <ul className="list-disc">
                                 {ed.Description.map(desc => (
-                                    <li className="text-sm">{desc}</li>
+                                    <li key={desc} className="text-sm">{desc}</li>
                                 ))}
                             </ul>
                         </div>
@@ -62,8 +62,8 @@ const CV = () => {
             
             <Widget
                 title="Awards"
-                contents={[cv.Awards.map(award => (
-                    <div className="text-sm">{award}</div>
+                contents={[cv.Awards.map((award, i) => (
+                    <div key={i} className="text-sm">{award}</div>
                 ))]}
             />
 
