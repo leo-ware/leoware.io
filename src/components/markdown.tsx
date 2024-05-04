@@ -1,15 +1,12 @@
-import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+
 import remarkMath from 'remark-math'
 import { InlineMath, BlockMath } from 'react-katex'
 import 'katex/dist/katex.min.css'
 
 import Code from './code'
-
-type MarkdownType = {
-    source: string
-    className?: string
-}
+import Mermaid from './mermaid'
+import MdImage from './mdImage'
 
 const components = {
     code: (props: {className?: string, children?: React.ReactNode}) => {
@@ -22,20 +19,19 @@ const components = {
             }
         } else {
             const language = classes.find((c) => c.startsWith("language-"))?.slice(9)
-            return <Code language={"python"} code={props.children as string}/>
+            if (language === "mermaid") {
+                return <Mermaid code={props.children as string}/>
+            }
+            return <Code language={language || ""} code={props.children as string}/>
         }
     },
     pre: (props: {children?: React.ReactNode}) => <>{props.children}</>,
-    img: (props: {src?: string, alt?: string}) => (
-        <span className='w-full h-auto flex justify-center'>
-            <Image
-                src={props.src || ""}
-                alt={props.alt || ""}
-                width={500}
-                height={200}
-                className="animate-fade-in h-auto"/>
-        </span>
-        ),
+    img: MdImage,
+}
+
+type MarkdownType = {
+    source: string
+    className?: string
 }
 
 const Markdown = async (props: MarkdownType) => {
@@ -46,8 +42,9 @@ const Markdown = async (props: MarkdownType) => {
                 components={components}
                 options={{
                     mdxOptions: {
-                        remarkPlugins: [remarkMath],
-                        // rehypePlugins: [rehypeKatex]
+                        remarkPlugins: [
+                            remarkMath,
+                        ],
                     }
                 }}
                 />
