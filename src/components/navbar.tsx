@@ -1,6 +1,7 @@
-import Link from "next/link";
+import Link from "next/link"
+import NavbarHamburger from "./navbarHamburger"
 
-const links = [
+export const links: [string, string][] = [
     ["About", "/about"],
     ["Projects", "/projects"],
     ["CV", "/cv"],
@@ -8,7 +9,7 @@ const links = [
 
 const Navbar = () => {
     return (
-        <div className="col-span-12 grid grid-cols-subgrid border-b-2 border-b-black bg-white">
+        <div className="col-span-12 grid grid-cols-subgrid border-b-2 border-b-black bg-white relative z-0">
             <div className="col-span-10 col-start-2 py-2 flex flex-row flex-row justify-between items-end">
                 <Link href="/">
                     <div className="text-xl font-semibold">Leo Ware</div>
@@ -22,9 +23,7 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div className="md:hidden w-4 h-6 align-end">
-                        {Array(5).fill(0).map(i => (
-                            <div key={i} className="h-0.5 w-4 odd:bg-black br-1"/>
-                        ))}
+                    <NavbarHamburger />
                 </div>
             </div>
         </div>
