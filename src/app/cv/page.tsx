@@ -72,3 +72,16 @@ const CV = () => {
 }
 
 export default CV
+
+// {
+//     "Company": "West Virginia University",
+//     "Title": "Research Assistant",
+//     "Location": "Morgantown, WV",
+//     "Dates": "December 2023 - Present",
+//     "Description": [
+//         "Developed a custom model validation pipeline, proving that a published result overestimated model performance by 2x",
+//         "Developed a multi-threaded implementation of proposed ML technique, showing 5x speedup in training time relative to a prototype",
+//         "Improved on the design of the technique, leading to 30% improved fit",
+//         "Improved training times on another key model by 30x by migrating to scikit-learn"
+//     ]
+// },
