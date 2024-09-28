@@ -1,6 +1,6 @@
 ---
 title: On Using Mermaid in React
-desc: in which I describe one afternoon's painful lessons
+desc: how I got mermaid working for this site
 ---
 
 *Reference doc for future-Leo or others interested in getting Mermaid working with React/Next/MDX.*

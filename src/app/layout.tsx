@@ -22,11 +22,11 @@ export default function RootLayout({
         <html lang="en">
             
             <body className={inter.className}>
-                <div className="h-full w-full grid grid-cols-12 grid-rows-10">
-                    <div className="grid grid-cols-subgrid col-start-1 col-span-12 row-span-1">
+                <div className="h-full w-full flex flex-col justify-stretch items-stretch">
+                    <div className="w-full h-20">
                         <Navbar />
                     </div>
-                    <div className="grid grid-cols-subgrid col-span-8 col-start-3 row-start-2 row-span-8">
+                    <div className="p-10">
                         {children}
                     </div>
                 </div>

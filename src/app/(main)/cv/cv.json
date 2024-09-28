@@ -28,6 +28,12 @@
     ],
     "Education": [
         {
+            "Institution": "West Virginia University",
+            "Degree": "Masters of Science in Biostatistics",
+            "Location": "Morgantown, WV",
+            "Dates": "August 2024 - May 2026"
+        },
+        {
             "Institution": "Minerva University",
             "Degree": "Bachelor of Science in Data Science and Statistics",
             "Location": "San Francisco, CA",

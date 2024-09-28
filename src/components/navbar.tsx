@@ -9,8 +9,7 @@ export const links: [string, string][] = [
 
 const Navbar = () => {
     return (
-        <div className="col-span-12 grid grid-cols-subgrid border-b-2 border-b-black bg-white relative z-0">
-            <div className="col-span-10 col-start-2 py-2 flex flex-row flex-row justify-between items-end">
+        <div className="w-full flex justify-between px-10 py-2 items-center border-b-2 border-b-black bg-white relative z-0">
                 <Link href="/">
                     <div className="text-xl font-semibold">Leo Ware</div>
                 </Link>
@@ -18,14 +17,13 @@ const Navbar = () => {
                 <div className="hidden md:flex flex-row justify-between w-1/4">
                     {links.map(([name, href]) => (
                         <Link key={name} href={href}>
-                            <div className="sm:px-2 text-xl font-semibold">{name}</div>
+                            <div className="sm:px-2 text-lg lg:text-xl font-semibold">{name}</div>
                         </Link>
                     ))}
                 </div>
-                <div className="md:hidden w-4 h-6 align-end">
+                <div className="md:hidden w-fit h-fit">
                     <NavbarHamburger />
                 </div>
-            </div>
         </div>
     );
 };

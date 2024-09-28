@@ -17,12 +17,14 @@ const socialLinks: [string, StaticImageData, string][] = [
 
 export default function Home() {
   return (
-    <div className="col-span-10 h-full flex flex-col sm:flex-row items-center justify-center">
+    <div className="h-full w-full flex flex-col gap-8 sm:flex-row items-center justify-center">
         <Image src={MeSitting} alt="Me" className="w-48 sm:w-64  "/>
         <div className="max-w-96 max-h-32">
             <div className="text-xl font-bold">{"Hi, I'm Leo"}</div>
             <p>
-                {"I'm interested in causal inference and computational statistics. I'm currently existing in an academic liminal space. "}
+                I'm interested in causal inference and computational statistics. I'm currently a Master's student in biostatistics
+                at West Virginia University, and I work for an <Link target="_blank" className="link" href={"https://alien-encyclopedia.com/"}>AI startup</Link>.
+                
                 Check out my <Link className="link" href={"/projects"}>projects</Link> or reach out below.
             </p>
             <div className="flex flex-row">
