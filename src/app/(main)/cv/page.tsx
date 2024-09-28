@@ -18,8 +18,8 @@ const CV = () => {
 
             <Widget
                 title="Experience"
-                contents={cv.Experience.map(exp => (
-                    <>
+                contents={cv.Experience.map((exp, i) => (
+                    <div className="w-full h-fit" key={i}>
                         <div className="flex flex-col md:flex-row justify-between">
                             <div className="text-sm font-bold">{exp.Company}</div>
                             <div className="md:hidden text-sm">{exp.Title}</div>
@@ -36,13 +36,13 @@ const CV = () => {
                                 ))}
                             </ul>
                         </div>
-                    </>
+                    </div>
                 ))} />
 
             <Widget
                 title="Education"
-                contents={cv.Education.map(ed => (
-                    <>
+                contents={cv.Education.map((ed, i) => (
+                    <div className="w-full h-fit" key={i}>
                         <div className="flex justify-between">
                             <div className="text-sm font-bold">{ed.Institution}</div>
                             <div className="text-sm">{ed.Dates}</div>
@@ -58,14 +58,16 @@ const CV = () => {
                                 ))}
                             </ul>
                         </div>
-                    </>
+                    </div>
                 ))}/>
             
             <Widget
                 title="Awards"
-                contents={[cv.Awards.map((award, i) => (
-                    <div key={i} className="text-sm">{award}</div>
-                ))]}
+                contents={cv.Awards.map((award, i) => (
+                    <div className="w-full h-fit" key={i}>
+                        <div className="text-sm">{award}</div>
+                    </div>
+                ))}
             />
 
         </div>
