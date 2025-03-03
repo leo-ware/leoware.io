@@ -23,7 +23,7 @@ export default function Home() {
             <div className="text-xl font-bold">{"Hi, I'm Leo"}</div>
             <p>
                 I'm interested in causal inference and computational statistics. I'm currently a Master's student in biostatistics
-                at West Virginia University, and I work for an <Link target="_blank" className="link" href={"https://alien-encyclopedia.com/"}>AI startup</Link>.
+                at West Virginia University.
                 
                 Check out my <Link className="link" href={"/projects"}>projects</Link> or reach out below.
             </p>

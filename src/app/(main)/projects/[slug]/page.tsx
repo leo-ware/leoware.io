@@ -8,7 +8,7 @@ const ProjectPage = ({ params }: { params: { slug: string } }) => {
         <div className="w-full h-full flex flex-col justify-center">
             <div>
                 <div className="text-4xl font-bold flex justify-start my-10">{p.metadata.title || p.slug}</div>
-                <div>{p.metadata.date}</div>
+                {/* <div>{p.metadata.date?.toLocaleDateString()}</div> */}
                 <div className="">
                     {typeof p.content === "string"
                         ? <Markdown source={p.content} />

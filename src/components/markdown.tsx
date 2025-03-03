@@ -1,7 +1,8 @@
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
 import remarkMath from 'remark-math'
-import { InlineMath, BlockMath } from 'react-katex'
+import remarkGfm from 'remark-gfm'
+import { InlineMath, BlockMath } from 'react-katex' 
 import 'katex/dist/katex.min.css'
 
 import Code from './code'
@@ -27,6 +28,16 @@ const components = {
     },
     pre: (props: {children?: React.ReactNode}) => <>{props.children}</>,
     img: MdImage,
+    table: (props: {children?: React.ReactNode}) => (
+        <table className="min-w-full divide-y divide-gray-200">
+            {props.children}
+        </table>
+    ),
+    thead: (props: {children?: React.ReactNode}) => <thead>{props.children}</thead>,
+    tbody: (props: {children?: React.ReactNode}) => <tbody>{props.children}</tbody>,
+    tr: (props: {children?: React.ReactNode}) => <tr>{props.children}</tr>,
+    th: (props: {children?: React.ReactNode}) => <th className="px-6 py-3 text-left">{props.children}</th>,
+    td: (props: {children?: React.ReactNode}) => <td className="px-6 py-4">{props.children}</td>
 }
 
 type MarkdownType = {
@@ -44,10 +55,11 @@ const Markdown = async (props: MarkdownType) => {
                     mdxOptions: {
                         remarkPlugins: [
                             remarkMath,
+                            [remarkGfm, { singleTilde: false }],
                         ],
                     }
                 }}
-                />
+            />
         </div>
     )
 }

@@ -13,11 +13,17 @@ const Projects = () => {
 
     const projects = mdProjects.concat(nbProjects)
 
+    const projectsWithDate = projects.map(p => ({
+        ...p,
+        date: p.metadata.date ? new Date(p.metadata.date) : null
+    })).sort((a, b) => (b.date?.getTime() || 0) - (a.date?.getTime() || 0))
+
     return (
         <div className="w-full h-full">
             <div className="text-4xl font-bold flex justify-center my-10">Projects</div>
             <ul className="list-disc col-span-6 col-start-2">
-                {projects.map(p => (
+                {projectsWithDate
+                    .map(p => (
                     <li key={p.slug}>
                         <Link href={`/projects/${p.slug}`} className="link">{p.metadata.title}</Link>
                         {" "}
