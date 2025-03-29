@@ -1,14 +1,34 @@
 {
     "Experience": [
         {
+            "Company": "Alien Encyclopedia",
+            "Title": "Software Engineer",
+            "Location": "Remote",
+            "Dates": "June 2024 - December 2024",
+            "Description": [
+                "Led development on a full stack application prototype in the education space using Next.js",
+                "Built a RAG system for generation of educational content and built front-end and back-end systems",
+                "Designed and implemented a hybrid LLM/traditional recommendation system using few-shot learning and collaborative filtering"
+            ]
+        },
+        {
+            "Company": "West Virginia University",
+            "Title": "Research Intern",
+            "Location": "Morgantown, WV",
+            "Dates": "December 2023 - June 2024",
+            "Description": [
+                "Developed a novel training system for random forest models on time series and repeated measures data",
+                "Designed and implemented a custom model validation pipeline to measure performance on an applied problem, showing it decreased overfitting and improved performance"
+            ]
+        },
+        {
             "Company": "Carnegie Mellon University",
             "Title": "Research Intern",
             "Location": "Pittsburgh, PA",
             "Dates": "June 2022 - August 2022",
             "Description": [
-                "Developed a machine learning based tool for human in the loop extraction of web content",
-                "Built an intuitive web-based interface using Typescript/React/Firebase, making the tool available to non-technical users",
-                "Collaborated with the data science team on design of an LLM-based recommendation pipeline",
+                "Built an intuitive web-based interface for a human in the loop machine learning system",
+                "Collaborated with the data science team on the design of an LLM-based recommendation pipeline",
                 "Prepared a demo for a strategic partnership pitch to Firefox, the only intern selected to do so"
             ]
         },
@@ -18,10 +38,9 @@
             "Location": "San Francisco, CA",
             "Dates": "June 2021 - August 2021",
             "Description": [
-                "Developed a product pitch and received $20,000 in seed-stage grant funding from the SoftBank Masason AI fund",
-                "Coordinated a three-person team as head of front-end development, developing a project prototype in three months",
+                "Headed a three-person front-end development team, developing a project prototype in three months",
                 "Faced with performance issues, developed a custom data structure that cut render times by 90%",
-                "Iterated on product-market fit by conducting 5+ user-interviews, leading to a major pivot",
+                "Iterated on product-market fit by conducting 5+ user-interviews, leading to a pivot",
                 "Presented to the CEO of Deepcore and VP of SoftBank, resulting in continued funding for the project"
             ]
         }
@@ -39,9 +58,8 @@
             "Location": "San Francisco, CA",
             "Dates": "August 2019 - December 2023",
             "Description": [
-                "GPA: 3.7/4.0",
-                "Honed software engineering and computational modeling skills with classes in Data Structure & Algorithms, Artificial Intelligence, Causal Inference & Machine Learning",
-                "Learned intercultural communication skills through the global rotation program, with six semesters abroad in seven countries"
+                "Completed coursework a wide variety of modeling techniques, including machine learning, bayesian statistics, causal inference, and differential equation modeling",
+                "Developed computer science skills with coursework in data structures, traditional artificial intelligence techniques, and optimization"
             ]
         }
     ],
