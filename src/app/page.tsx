@@ -22,8 +22,8 @@ export default function Home() {
         <div className="max-w-96 max-h-32">
             <div className="text-xl font-bold">{"Hi, I'm Leo"}</div>
             <p>
-                I'm interested in causal inference and computational statistics. I'm currently a Master's student in biostatistics
-                at West Virginia University.
+                I'm currently a Master's student in biostatistics at West Virginia University working on extreme event modeling
+                in time series data.
                 
                 Check out my <Link className="link" href={"/projects"}>projects</Link> or reach out below.
             </p>

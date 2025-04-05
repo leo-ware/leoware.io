@@ -16,10 +16,6 @@ Some simple game theoretic models with solutions
 ## Games
 #### Prisoner's Dilemma
 
-| | A | B
-| - | - | - |
-| | | 0 |
-
 	- Iterated version is solvable
 	- ESS and Axelrod experiments
 - Stag hunt
