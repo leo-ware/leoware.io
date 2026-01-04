@@ -9,6 +9,8 @@ type MetadataType = {
     title?: string
     desc?: string
     date?: string
+    github?: string
+    tags?: string[]
 }
 
 type ProjectType = {
@@ -21,6 +23,7 @@ export const parseProjectNb = (fname: string): ProjectType => {
     fname = fname.endsWith(".ipynb") ? fname : fname + ".ipynb"
     const slug = fname.replace(".ipynb", "")
     const filePath = path.join(process.cwd(), projectsRoot, fname)
+    console.log(filePath)
     const fileContents = fs.readFileSync(filePath, {encoding: 'utf8'})
     const nb = JSON.parse(fileContents) as NotebookType
 
@@ -39,7 +42,7 @@ export const parseProjectMd = (fname: string): ProjectType => {
 
     const filePath = path.join(process.cwd(), projectsRoot, fname)
     const fileContents = fs.readFileSync(filePath, {encoding: 'utf8'})
-    
+
     const {metadata, content} = parseMd(fileContents) as {
         content: string,
         metadata?: MetadataType
@@ -47,7 +50,9 @@ export const parseProjectMd = (fname: string): ProjectType => {
     return {content, slug, metadata: {
         title: metadata?.title || "",
         desc: metadata?.desc || "",
-        date: metadata?.date || ""
+        date: metadata?.date || "",
+        github: metadata?.github,
+        tags: metadata?.tags
     }}
 }
 

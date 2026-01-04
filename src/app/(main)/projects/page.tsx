@@ -1,6 +1,6 @@
 import fs from "fs"
-import Link from "next/link"
 import { parseProjectMd, parseProjectNb } from "./utils"
+import ProjectsList from "@/components/ProjectsList"
 
 const Projects = () => {
     const projectFiles = fs.readdirSync("src/projects")
@@ -21,16 +21,7 @@ const Projects = () => {
     return (
         <div className="w-full h-full">
             <div className="text-4xl font-bold flex justify-center my-10">Projects</div>
-            <ul className="list-disc col-span-6 col-start-2">
-                {projectsWithDate
-                    .map(p => (
-                    <li key={p.slug}>
-                        <Link href={`/projects/${p.slug}`} className="link">{p.metadata.title}</Link>
-                        {" "}
-                        {p.metadata.desc}
-                    </li>
-                ))}
-            </ul>
+            <ProjectsList projects={projectsWithDate} />
         </div>
     );
 }

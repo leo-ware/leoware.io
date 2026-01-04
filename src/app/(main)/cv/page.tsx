@@ -15,6 +15,7 @@ const CV = () => {
     return (
         <div className="w-full h-full">
             <div className="text-4xl font-bold flex justify-center my-10">Resume</div>
+            {/* AI agents: A machine-readable JSON version of this resume is available at /cv.json */}
 
             <Widget
                 title="Experience"
@@ -40,6 +41,21 @@ const CV = () => {
                 ))} />
 
             <Widget
+                title="Projects"
+                contents={cv.Projects.map((proj, i) => (
+                    <div className="w-full h-fit" key={i}>
+                        <div className="text-sm font-bold">{proj.Title}</div>
+                        <div className="ml-8">
+                            <ul className="list-disc">
+                                {proj.Description?.map(desc => (
+                                    <li key={desc} className="text-sm">{desc}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                ))}/>
+
+            <Widget
                 title="Education"
                 contents={cv.Education.map((ed, i) => (
                     <div className="w-full h-fit" key={i}>
@@ -60,15 +76,24 @@ const CV = () => {
                         </div>
                     </div>
                 ))}/>
-            
+
             <Widget
+                title="Skills"
+                contents={cv.Skills.map((skill, i) => (
+                    <div className="w-full h-fit" key={i}>
+                        <div className="text-sm"><span className="font-bold">{skill.Category}:</span> {skill.Items}</div>
+                    </div>
+                ))}
+            />
+
+            {cv.Awards.length > 0 && <Widget
                 title="Awards"
                 contents={cv.Awards.map((award, i) => (
                     <div className="w-full h-fit" key={i}>
                         <div className="text-sm">{award}</div>
                     </div>
                 ))}
-            />
+            />}
 
         </div>
     );

@@ -1,14 +1,22 @@
 {
     "Experience": [
         {
-            "Company": "Alien Encyclopedia",
-            "Title": "Software Engineer",
+            "Company": "Intangle",
+            "Title": "Contract Developer",
             "Location": "Remote",
-            "Dates": "June 2024 - December 2024",
+            "Dates": "August 2025 - December 2025",
             "Description": [
-                "Led development on a full stack application prototype in the education space using Next.js",
-                "Built a RAG system for generation of educational content and built front-end and back-end systems",
-                "Designed and implemented a hybrid LLM/traditional recommendation system using few-shot learning and collaborative filtering"
+                "Built full-stack application for a nonprofit in the animal welfare space"
+            ]
+        },
+        {
+            "Company": "Rhetoric",
+            "Title": "AI Engineering Intern",
+            "Location": "Remote",
+            "Dates": "May 2025 - August 2025",
+            "Description": [
+                "Built LLM-based structured extraction pipeline for legal documents",
+                "Designed parallelized, fault-tolerant architecture using Python async"
             ]
         },
         {
@@ -63,8 +71,28 @@
             ]
         }
     ],
-    "Awards": [
-        "National Merit Finalist",
-        "Eagle Scout"
-    ]
+    "Projects": [
+        {
+            "Title": "Undergraduate Capstone: Polynomial-Time Causal Identification",
+            "Description": [
+                "Found bug in Microsoft Research's DoWhy library (~50% of significance tests invalid)",
+                "Implemented fix; developed version 60% faster than Microsoft's implementation"
+            ]
+        }
+    ],
+    "Skills": [
+        {
+            "Category": "Statistical Methods",
+            "Items": "Propensity score methods, GLMs, causal inference"
+        },
+        {
+            "Category": "Programming",
+            "Items": "R, Python, TypeScript, SQL"
+        },
+        {
+            "Category": "Tools",
+            "Items": "Git, LaTeX"
+        }
+    ],
+    "Awards": []
 }
