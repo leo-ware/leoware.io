@@ -9,22 +9,32 @@ export const links: [string, string][] = [
 
 const Navbar = () => {
     return (
-        <div className="w-full flex justify-between px-10 py-2 items-center border-b-2 border-b-black bg-white relative z-0">
-                <Link href="/">
-                    <div className="text-xl font-semibold">Leo Ware</div>
+        <nav className="w-full bg-white border-b border-neutral-200 fixed top-0 z-50 shadow-sm">
+            <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+                <Link href="/" className="group">
+                    <div className="text-2xl font-bold text-primary-900 group-hover:text-primary-700 transition-colors">
+                        Leo Ware
+                    </div>
                 </Link>
-                
-                <div className="hidden md:flex flex-row justify-between w-1/4">
+
+                <div className="hidden md:flex flex-row gap-8 items-center">
                     {links.map(([name, href]) => (
-                        <Link key={name} href={href}>
-                            <div className="sm:px-2 text-lg lg:text-xl font-semibold">{name}</div>
+                        <Link
+                            key={name}
+                            href={href}
+                            className="text-lg font-medium text-neutral-700 hover:text-primary-700 transition-colors relative group"
+                        >
+                            {name}
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-700 group-hover:w-full transition-all duration-200"></span>
                         </Link>
                     ))}
                 </div>
-                <div className="md:hidden w-fit h-fit">
+
+                <div className="md:hidden">
                     <NavbarHamburger />
                 </div>
-        </div>
+            </div>
+        </nav>
     );
 };
 

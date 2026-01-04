@@ -20,13 +20,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            
             <body className={inter.className}>
                 <div className="h-full w-full flex flex-col justify-stretch items-stretch">
                     <div className="w-full h-20">
                         <Navbar />
                     </div>
-                    <div className="p-10">
+                    <div className="h-full w-full p-10 overflow-y-auto bg-white">
                         {children}
                     </div>
                 </div>
