@@ -10,7 +10,7 @@ const ProjectPage = async ({ params }: { params: Promise<{ slug: string }> }) =>
     return (
         <>
             {/* Main Content - spans 8 columns */}
-            <div className="col-span-12 lg:col-span-8 py-10">
+            <div className="col-span-12 lg:col-span-5 lg:col-start-4">
                 <div className="text-4xl font-bold flex justify-start mb-10">{p.metadata.title || p.slug}</div>
                 <div className="">
                     {typeof p.content === "string"
@@ -21,8 +21,8 @@ const ProjectPage = async ({ params }: { params: Promise<{ slug: string }> }) =>
             </div>
 
             {/* Sidebar - spans 4 columns */}
-            <div className="col-span-12 lg:col-span-4 py-10">
-                <div className="lg:sticky lg:top-24 bg-neutral-50 border border-neutral-200 p-6 rounded-lg">
+            <div className="col-span-12 lg:col-span-3 lg:col-start-9">
+                <div className="lg:sticky lg:top-0 bg-neutral-50 border border-neutral-200 p-6 rounded-lg">
                     <div className="text-sm font-bold text-primary-900 mb-4">Project Info</div>
 
                     {p.metadata.date && (

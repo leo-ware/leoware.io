@@ -19,7 +19,7 @@ const Projects = () => {
     })).sort((a, b) => (b.date?.getTime() || 0) - (a.date?.getTime() || 0))
 
     return (
-        <div className="col-span-12 lg:col-span-8 lg:col-start-3 min-h-screen py-16">
+        <div className="col-span-12 lg:col-span-8 lg:col-start-3 min-h-full">
             <h1 className="text-5xl font-bold text-primary-900 mb-4">Projects</h1>
             <p className="text-xl text-neutral-600 mb-12">
                 Research and technical work in causal inference and statistical computing

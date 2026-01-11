@@ -120,11 +120,11 @@ export default function ProjectsList({ projects }: { projects: Project[] }) {
                                 <h2 className="text-2xl font-bold text-primary-900 group-hover:text-primary-700 transition-colors flex-1">
                                     {p.metadata.title}
                                 </h2>
-                                {p.date && (
+                                {/* {p.date && (
                                     <time className="text-sm text-neutral-500 font-medium whitespace-nowrap">
                                         {p.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
                                     </time>
-                                )}
+                                )} */}
                             </div>
                             {p.metadata.desc && (
                                 <p className="text-neutral-700 mb-4 leading-relaxed">{p.metadata.desc}</p>

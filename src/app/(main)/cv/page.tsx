@@ -45,7 +45,7 @@ const TimelineEntry = ({
 
 const CV = () => {
     return (
-        <div className="col-span-12 lg:col-span-8 lg:col-start-3 min-h-screen py-16">
+        <div className="col-span-12 lg:col-span-8 lg:col-start-3 min-h-full">
             {/* Header */}
             <div className="mb-12">
                 <h1 className="text-5xl font-bold text-primary-900 mb-4">Resume</h1>

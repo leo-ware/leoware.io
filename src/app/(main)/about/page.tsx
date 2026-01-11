@@ -1,5 +1,5 @@
 const About = () => (
-    <div className="col-span-12 lg:col-span-8 lg:col-start-3 min-h-screen py-16">
+    <div className="col-span-12 lg:col-span-8 lg:col-start-3 min-h-full">
         <h1 className="text-5xl font-bold text-primary-900 mb-12">About</h1>
 
         <div className="space-y-8 text-lg leading-relaxed">

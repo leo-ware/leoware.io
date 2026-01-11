@@ -22,10 +22,10 @@ export default function RootLayout({
         <html lang="en">
             <body className={inter.className}>
                 <div className="h-full w-full flex flex-col justify-stretch items-stretch">
-                    <div className="w-full h-20">
+                    <div className="w-full h-fit">
                         <Navbar />
                     </div>
-                    <div className="h-full w-full p-10 overflow-y-auto bg-white">
+                    <div className="h-full w-full overflow-y-auto bg-white py-8 px-6 md:px-10 md:py-10">
                         {children}
                     </div>
                 </div>
