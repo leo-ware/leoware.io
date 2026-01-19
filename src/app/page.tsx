@@ -94,7 +94,7 @@ export default function Home() {
                   <button
                     key={link.name}
                     onClick={link.onClick}
-                    className="text-neutral-600 hover:text-primary-700 transition-colors p-3 rounded-lg hover:bg-primary-50"
+                    className="text-primary-800 hover:text-primary-700 transition-colors p-3 rounded-lg hover:bg-primary-50"
                     aria-label={link.name}
                     title={link.name}
                   >
@@ -104,7 +104,7 @@ export default function Home() {
                   <Link
                     href={link.href!}
                     key={link.name}
-                    className="text-neutral-600 hover:text-primary-700 transition-colors p-3 rounded-lg hover:bg-primary-50"
+                    className="text-primary-800 hover:text-primary-700 transition-colors p-3 rounded-lg hover:bg-primary-50"
                     aria-label={link.name}
                     title={link.name}
                     target="_blank"
