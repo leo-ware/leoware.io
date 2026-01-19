@@ -50,11 +50,11 @@ export default function Home() {
   return (
     <div className="h-fit min-h-full w-full flex items-center justify-center">
       <div className="max-w-4xl w-full flex flex-col lg:flex-row gap-12 lg:gap-16 items-center lg:items-start">
-        <div className="relative flex-shrink-0">
+        <div className="relative flex-shrink-0 rounded-full border-4 border-primary-700">
           <Image
             src={MeSitting}
             alt="Leo Ware"
-            className="w-48 h-48 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-primary-100"
+            className="w-48 h-48 lg:w-64 lg:h-64 rounded-full object-cover [filter:grayscale(100%)_brightness(0.95)_contrast(1.5)_sepia(100%)_hue-rotate(180deg)_saturate(0.5)]"
             priority
           />
         </div>
