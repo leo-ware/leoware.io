@@ -1,98 +1,124 @@
 {
-    "Experience": [
-        {
-            "Company": "Intangle",
-            "Title": "Contract Developer",
-            "Location": "Remote",
-            "Dates": "August 2025 - December 2025",
-            "Description": [
-                "Built full-stack application for a nonprofit in the animal welfare space"
-            ]
-        },
-        {
-            "Company": "Rhetoric",
-            "Title": "AI Engineering Intern",
-            "Location": "Remote",
-            "Dates": "May 2025 - August 2025",
-            "Description": [
-                "Built LLM-based structured extraction pipeline for legal documents",
-                "Designed parallelized, fault-tolerant architecture using Python async"
-            ]
-        },
-        {
-            "Company": "West Virginia University",
-            "Title": "Research Intern",
-            "Location": "Morgantown, WV",
-            "Dates": "December 2023 - June 2024",
-            "Description": [
-                "Developed a novel training system for random forest models on time series and repeated measures data",
-                "Designed and implemented a custom model validation pipeline to measure performance on an applied problem, showing it decreased overfitting and improved performance"
-            ]
-        },
-        {
-            "Company": "Carnegie Mellon University",
-            "Title": "Research Intern",
-            "Location": "Pittsburgh, PA",
-            "Dates": "June 2022 - August 2022",
-            "Description": [
-                "Built an intuitive web-based interface for a human in the loop machine learning system",
-                "Collaborated with the data science team on the design of an LLM-based recommendation pipeline",
-                "Prepared a demo for a strategic partnership pitch to Firefox, the only intern selected to do so"
-            ]
-        },
-        {
-            "Company": "SoftBank",
-            "Title": "Software Engineer - Masason AI Incubator",
-            "Location": "San Francisco, CA",
-            "Dates": "June 2021 - August 2021",
-            "Description": [
-                "Headed a three-person front-end development team, developing a project prototype in three months",
-                "Faced with performance issues, developed a custom data structure that cut render times by 90%",
-                "Iterated on product-market fit by conducting 5+ user-interviews, leading to a pivot",
-                "Presented to the CEO of Deepcore and VP of SoftBank, resulting in continued funding for the project"
-            ]
-        }
-    ],
-    "Education": [
-        {
-            "Institution": "West Virginia University",
-            "Degree": "Masters of Science in Biostatistics",
-            "Location": "Morgantown, WV",
-            "Dates": "August 2024 - May 2026"
-        },
-        {
-            "Institution": "Minerva University",
-            "Degree": "Bachelor of Science in Data Science and Statistics",
-            "Location": "San Francisco, CA",
-            "Dates": "August 2019 - December 2023",
-            "Description": [
-                "Completed coursework a wide variety of modeling techniques, including machine learning, bayesian statistics, causal inference, and differential equation modeling",
-                "Developed computer science skills with coursework in data structures, traditional artificial intelligence techniques, and optimization"
-            ]
-        }
-    ],
-    "Projects": [
-        {
-            "Title": "Undergraduate Capstone: Polynomial-Time Causal Identification",
-            "Description": [
-                "Found bug in Microsoft Research's DoWhy library (~50% of significance tests invalid)",
-                "Implemented fix; developed version 60% faster than Microsoft's implementation"
-            ]
-        }
-    ],
-    "Skills": [
-        {
-            "Category": "Statistical Methods",
-            "Items": "Propensity score methods, GLMs, causal inference"
-        },
-        {
-            "Category": "Programming",
-            "Items": "R, Python, TypeScript, SQL"
-        },
-        {
-            "Category": "Tools",
-            "Items": "Git, LaTeX"
-        }
-    ],
-    "Awards": []
+  "Experience": [
+    {
+      "Company": "West Virginia University",
+      "Title": "Research Assistant - Clinical and Translational Sciences Institute",
+      "Location": "Morgantown, WV",
+      "Dates": "January 2026 - June 2026",
+      "Description": [
+        "Provide statistical consulting and data analysis support for WVU and WVU Medicine faculty research projects",
+        "Collaborate with clinical researchers on study design, statistical analysis, and manuscript preparation"
+      ]
+    },
+    {
+      "Company": "Intangle",
+      "Title": "Software Engineer",
+      "Location": "Remote",
+      "Dates": "August 2025 - January 2026",
+      "Description": [
+        "Built full-stack application for a nonprofit in the animal welfare space",
+        "Built full-stack application for a nonprofit consultancy"
+      ]
+    },
+    {
+      "Company": "Rhetoric",
+      "Title": "Data Science Intern",
+      "Location": "Remote",
+      "Dates": "May 2025 - August 2025",
+      "Description": [
+        "Built LLM-based data processing pipeline for structured information extraction from legal documents",
+        "Applied supervised learning techniques to predict outcomes of circuit court decisions",
+        "Built web app for visualization and inspection of results"
+      ]
+    },
+    {
+      "Company": "Alien Encyclopedia",
+      "Title": "Contract Software Engineer",
+      "Location": "Remote",
+      "Dates": "June 2024 - December 2024",
+      "Description": [
+        "Led development on full-stack application prototype in the education space using Next.js",
+        "Built RAG system for generation of educational content and built front-end and back-end systems",
+        "Designed and implemented hybrid LLM/traditional recommendation system using few-shot learning and collaborative filtering"
+      ]
+    },
+    {
+      "Company": "West Virginia University",
+      "Title": "Research Intern",
+      "Location": "Morgantown, WV",
+      "Dates": "December 2023 - June 2024",
+      "Description": [
+        "Developed novel training system for random forest models on time series and repeated measures data",
+        "Designed and implemented custom model validation pipeline to measure performance on an applied problem, showing it decreased overfitting and improved performance"
+      ]
+    },
+    {
+      "Company": "Carnegie Mellon University",
+      "Title": "Research Intern",
+      "Location": "Pittsburgh, PA",
+      "Dates": "May 2022 - August 2022",
+      "Description": [
+        "Built intuitive web-based interface for human-in-the-loop machine learning system",
+        "Collaborated with data science team on design of LLM-based recommendation pipeline",
+        "Prepared demo for strategic partnership pitch to Firefox, the only intern selected to do so"
+      ]
+    },
+    {
+      "Company": "SoftBank",
+      "Title": "Software Engineer - Masason AI Incubator",
+      "Location": "San Francisco, CA",
+      "Dates": "June 2021 - August 2021",
+      "Description": [
+        "Headed three-person front-end development team, developing project prototype in three months",
+        "Faced with performance issues, developed custom data structure that cut render times by 90%",
+        "Iterated on product-market fit by conducting 5+ user-interviews, leading to a pivot",
+        "Presented to CEO of Deepcore and VP of SoftBank, resulting in continued funding for the project"
+      ]
+    }
+  ],
+  "Education": [
+    {
+      "Institution": "West Virginia University",
+      "Degree": "Master of Science - MS, Biostatistics",
+      "Location": "Morgantown, WV",
+      "Dates": "August 2024 - May 2026",
+      "Description": ["3.9 GPA"]
+    },
+    {
+      "Institution": "Minerva University",
+      "Degree": "Bachelor of Science - BS, Computational Sciences",
+      "Location": "San Francisco, CA",
+      "Dates": "2019 - 2023",
+      "Description": ["Concentration in Data Science and Statistics"]
+    }
+  ],
+  "Projects": [
+    {
+      "Title": "Undergraduate Capstone: Polynomial-Time Causal Identification",
+      "Description": [
+        "Found bug in Microsoft Research's DoWhy library (~50% of significance tests invalid)",
+        "Implemented fix; developed version 60% faster than Microsoft's implementation"
+      ]
+    },
+    {
+      "Title": "Publication: Glenohumeral Septic Arthritis Study",
+      "Description": [
+        "Vettiyil B, Ashikyan O, Ware L, Wen S, Frick M. 'Glenohumeral septic arthritis in intravenous drug users: 10-year retrospective analysis at a tertiary care center in Appalachia.' Journal of Clinical Imaging Science. Status: Revise and Resubmit"
+      ]
+    }
+  ],
+  "Skills": [
+    {
+      "Category": "Statistical Methods",
+      "Items": "Propensity score methods, GLMs, causal inference, survival analysis, Bayesian methods"
+    },
+    {
+      "Category": "Programming",
+      "Items": "Python, R, TypeScript, JavaScript, SQL"
+    },
+    {
+      "Category": "Tools",
+      "Items": "Git, LaTeX, React, Next.js"
+    }
+  ]
 }
