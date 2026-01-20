@@ -4,6 +4,7 @@ desc: High-performance implementation of Shpitser's ID algorithm for causal iden
 date: 2023-12-01
 github: https://github.com/leo-ware/pqp
 tags: [Rust, Python, Causal Inference, Algorithms]
+category: Research
 ---
 
 High-performance implementation of Shpitser's ID algorithm for causal identification, written in Rust. While working on this project, I found a bug in Microsoft Research's DoWhy library that was invalidating ~50% of significance tests. My implementation is more general and 60% faster than Microsoft's version.

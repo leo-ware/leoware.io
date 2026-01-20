@@ -11,6 +11,19 @@ const About = () => (
         </p>
       </div>
       <p>
+        I work as a biostatistician at the{" "}
+        <Link
+          href="https://www.wvctsi.org/programs/epidemiology-biostatistics-data/biostatistics-epidemiology-research-design/"
+          target="_blank"
+          className="font-semibold text-primary-800 hover:underline"
+        >
+          West Virginia Clinical and Translational Science Institute
+        </Link>{" "}
+        (WVU CTSI), where I provide statistical support for clinical and
+        translational research projects. This includes study design, power
+        analysis, and data analysis for researchers across the university.
+      </p>
+      <p>
         My background combines statistical training with hands-on engineering.
         For my undergraduate thesis at Minerva University, I worked on causal
         identification algorithms and found a bug in Microsoft Research's{" "}

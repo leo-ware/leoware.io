@@ -3,6 +3,7 @@ title: Glenohumeral Septic Arthritis Study
 desc: Statistical analysis for a 10-year retrospective study on IV drug use and shoulder joint infections
 date: 2025-05-01
 tags: [Biostatistics, Healthcare, Research]
+category: Research
 ---
 
 Statistical analysis for a retrospective study examining glenohumeral septic arthritis in intravenous drug users versus non-users at a tertiary care center in Appalachia.

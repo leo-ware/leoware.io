@@ -4,6 +4,7 @@ desc: KD-trees for linear time matching in causal inference
 date: 2023-11-01
 github: https://github.com/leo-ware/fast-matching-inference
 tags: [Python, Causal Inference, Algorithms]
+category: Research
 ---
 
 KD-trees for best-case linear time implementation of Abadie & Diamond's statistical matching procedure for causal inference.

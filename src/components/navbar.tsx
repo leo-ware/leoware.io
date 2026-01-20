@@ -3,8 +3,10 @@ import NavbarHamburger from "./navbarHamburger"
 
 export const links: [string, string][] = [
     ["About", "/about"],
+    ["Consulting", "/consulting"],
     ["Projects", "/projects"],
     ["CV", "/cv"],
+    ["Contact", "/contact"],
 ];
 
 const Navbar = () => {

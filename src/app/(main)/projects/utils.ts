@@ -11,6 +11,7 @@ type MetadataType = {
     date?: string
     github?: string
     tags?: string[]
+    category?: "Research" | "Consulting" | "Writing"
 }
 
 type ProjectType = {
@@ -52,7 +53,8 @@ export const parseProjectMd = (fname: string): ProjectType => {
         desc: metadata?.desc || "",
         date: metadata?.date || "",
         github: metadata?.github,
-        tags: metadata?.tags
+        tags: metadata?.tags,
+        category: metadata?.category
     }}
 }
 

@@ -3,6 +3,7 @@ title: Causal Inference, a Four-Stage Framework
 desc: An article I wrote on a nice way to conceptualize causal modeling
 date: 2023-05-01
 tags: [Causal Inference, Statistics, Tutorial]
+category: Writing
 ---
 
 Randomized control trials are the gold standard of causality, but they are not always possible, whether because of cost, ethical concerns, or other issues. Causal inference is about characterizing what causal relationships exist in a dataset with access to only observational data — i.e., without the ability to run experiments. In this article, I’m going to outline a framework for causal inference developed by Sharma (2020). Based on Judea Pearl’s theory of Structural Causal Models, this framework breaks the process into four steps, making it easier to understand.
