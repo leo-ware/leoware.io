@@ -21,7 +21,7 @@
     "framer-motion": "^12.27.5",
     "mermaid": "^11.4.1",
     "next": "^15.1.4",
-    "next-mdx-remote": "^5.0.0",
+    "next-mdx-remote": "^6.0.0",
     "parse-md": "^3.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
