@@ -57,64 +57,20 @@ const Consulting = () => (
 				<div className="space-y-4 text-lg leading-relaxed">
 					<p>
 						Outside of my CTSI work, I'm available for contract
-						projects in two main areas: biostatistical consulting
-						and full-stack web development.
-					</p>
-					<h3 className="text-xl font-semibold text-primary-700 mt-6">
-						Biostatistical Consulting
-					</h3>
-					<p>
-						I provide statistical analysis and methodology support
-						for research projects, with particular expertise in
-						causal inference, clinical outcomes research, and
-						healthcare analytics. My work includes study design
-						consultation, power analysis, hypothesis testing,
-						regression modeling, and manuscript preparation support.
+						projects in data science and statistical consulting.
 					</p>
 					<p>
-						Recent biostatistics projects include a{" "}
+						My work includes causal identification (DAG design,
+						propensity score methods, regression discontinuity),
+						clinical outcomes research, and survival analysis,
+						across projects like a{" "}
 						<Link
 							href="/projects/septic-arthritis"
 							className="text-primary-700 hover:text-primary-800 underline"
 						>
 							retrospective study on septic arthritis
 						</Link>{" "}
-						analyzing clinical outcomes in IV drug users, as well as
-						an open-source tool for causal inference,{" "}
-						<Link
-							href="/projects/pqp"
-							className="text-primary-700 hover:text-primary-800 underline"
-						>
-							pqp
-						</Link>{" "}
-						(a high-performance causal identification algorithm).
-					</p>
-					<h3 className="text-xl font-semibold text-primary-700 mt-6">
-						Full-Stack Web Development
-					</h3>
-					<p>
-						I build modern, performant web applications using
-						Next.js, TypeScript, and React. Whether you need a
-						marketing site, a web application, or a data dashboard,
-						I can help bring your project to life.
-					</p>
-					<p>
-						Recent web development projects include{" "}
-						<Link
-							href="/projects/return-to-freedom"
-							className="text-primary-700 hover:text-primary-800 underline"
-						>
-							Return to Freedom
-						</Link>
-						, a website redesign for a wild horse conservation
-						nonprofit (ongoing), and{" "}
-						<Link
-							href="/projects/telea-insights"
-							className="text-primary-700 hover:text-primary-800 underline"
-						>
-							a marketing website for Telea Insights
-						</Link>
-						, a philanthropic consulting firm.
+						in IV drug users.
 					</p>
 					<p className="mt-6">
 						Interested in working together? Let's set up a call to

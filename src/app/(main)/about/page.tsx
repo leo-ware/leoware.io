@@ -6,8 +6,10 @@ const About = () => (
     <div className="space-y-8 text-lg leading-relaxed">
       <div className="border-l-4 border-primary-300 pl-6">
         <p className="text-xl text-neutral-800 font-medium">
-          I'm a data scientist and full-stack developer finishing my MS in
-          Biostatistics at West Virginia University (May 2026).
+          My background combines rigorous statistical training with hands-on
+          engineering. I've found bugs in Microsoft Research's causal inference
+          library, built LLM pipelines in production, and consulted on
+          everything from DAG design to Bayesian modeling.
         </p>
       </div>
       <p>

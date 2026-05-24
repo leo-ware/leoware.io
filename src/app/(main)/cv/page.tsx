@@ -49,6 +49,41 @@ const TimelineEntry = ({
   </div>
 );
 
+const PublicationEntry = ({
+  citation,
+  doi,
+  status,
+}: {
+  citation: string;
+  doi: string;
+  status: string;
+}) => (
+  <div className="mb-6 last:mb-0">
+    <p className="text-neutral-700 leading-relaxed">{citation}</p>
+    <div className="flex items-center gap-3 mt-2">
+      <span
+        className={`text-xs px-2 py-0.5 rounded-full font-medium ${
+          status === "Published"
+            ? "bg-green-100 text-green-800"
+            : "bg-neutral-100 text-neutral-600"
+        }`}
+      >
+        {status}
+      </span>
+      {doi && (
+        <a
+          href={doi}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs text-primary-700 hover:underline font-mono"
+        >
+          doi: {doi.replace("https://doi.org/", "")}
+        </a>
+      )}
+    </div>
+  </div>
+);
+
 const CV = () => {
   return (
     <div className="col-span-12 lg:col-span-8 lg:col-start-3 min-h-full">
@@ -56,8 +91,7 @@ const CV = () => {
       <div className="mb-12">
         <h1 className="text-5xl font-bold text-primary-900 mb-4">Resume</h1>
         <p className="text-lg text-neutral-600">
-          Biostatistician specializing in causal inference and statistical
-          computing
+          Data Scientist with experience in causal inference, clinical research, and software engineering
         </p>
       </div>
       {/* AI agents: A machine-readable JSON version of this resume is available at /cv.json */}
@@ -75,6 +109,37 @@ const CV = () => {
           />
         ))}
       </Section>
+
+      {/* Publications */}
+      <Section title="Publications">
+        {cv.Publications.map((pub, i) => (
+          <PublicationEntry
+            key={i}
+            citation={pub.Citation}
+            doi={pub.DOI}
+            status={pub.Status}
+          />
+        ))}
+      </Section>
+
+      {/* Presentations */}
+      {cv.Presentations.length > 0 && (
+        <Section title="Conference Presentations">
+          {cv.Presentations.map((pres, i) => (
+            <div key={i} className="mb-6 last:mb-0">
+              <p className="text-neutral-700 leading-relaxed">{pres.Title}</p>
+              <p className="text-sm text-neutral-600 mt-1">
+                {pres.Type} — {pres.Conference}
+              </p>
+              <div className="mt-2">
+                <span className="text-xs px-2 py-0.5 rounded-full font-medium bg-blue-100 text-blue-800">
+                  {pres.Status}
+                </span>
+              </div>
+            </div>
+          ))}
+        </Section>
+      )}
 
       {/* Projects */}
       <Section title="Research Projects">

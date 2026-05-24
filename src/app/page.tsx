@@ -48,18 +48,19 @@ export default function Home() {
 							Leo Ware
 						</h1>
 						<p className="text-xl text-primary-700 font-medium mb-2">
-							Data Scientist & Full-Stack Developer
+							Data Scientist
 						</p>
 						<p className="text-lg text-neutral-600">
-							MS Biostatistics, WVU '26
+							MS Biostatistics, WVU
 						</p>
 					</div>
 
 					<p className="text-lg text-neutral-700 leading-relaxed max-w-2xl">
-						My background combines statistical training with
-						hands-on engineering—I've shipped web apps, built LLM
-						pipelines, and found bugs in Microsoft's causal
-						inference library.
+						I specialize in causal inference and applied statistics,
+						with enough engineering background to build and ship
+						what I design. I've published in medical journals,
+						shipped software to production, and found a bug in
+						Microsoft's causal inference library.
 					</p>
 
 					<div className="flex flex-wrap gap-4 pt-2">

@@ -4,17 +4,18 @@
 			"Company": "West Virginia Clinical and Translational Sciences Institute",
 			"Title": "Research Assistant",
 			"Location": "Morgantown, WV",
-			"Dates": "January 2026 - June 2026",
+			"Dates": "January 2026 - Present",
 			"Description": [
 				"Provide statistical consulting and data analysis support for WVU and WVU Medicine faculty research projects",
-				"Collaborate with clinical researchers on study design, statistical analysis, and manuscript preparation"
+				"Collaborate with clinical researchers on study design, statistical analysis, and manuscript preparation",
+				"Methods include propensity score matching, survival analysis, Bayesian modeling (Stan), and causal identification (DAG design, regression discontinuity)"
 			]
 		},
 		{
 			"Company": "Intangle",
 			"Title": "Software Engineer",
 			"Location": "Remote",
-			"Dates": "August 2025 - January 2026",
+			"Dates": "August 2025 - Present",
 			"Description": [
 				"Built full-stack application for a nonprofit in the animal welfare space",
 				"Built full-stack application for a nonprofit consultancy"
@@ -40,16 +41,6 @@
 				"Led development on full-stack application prototype in the education space using Next.js",
 				"Built RAG system for generation of educational content and built front-end and back-end systems",
 				"Designed and implemented hybrid LLM/traditional recommendation system using few-shot learning and collaborative filtering"
-			]
-		},
-		{
-			"Company": "West Virginia University",
-			"Title": "Research Intern",
-			"Location": "Morgantown, WV",
-			"Dates": "December 2023 - June 2024",
-			"Description": [
-				"Developed novel training system for random forest models on time series and repeated measures data",
-				"Designed and implemented custom model validation pipeline to measure performance on an applied problem, showing it decreased overfitting and improved performance"
 			]
 		},
 		{
@@ -92,18 +83,37 @@
 			"Description": ["Concentration in Data Science and Statistics"]
 		}
 	],
+	"Publications": [
+		{
+			"Citation": "Vettiyil B, Wen S, Ware L, Ashikyan O. Glenohumeral septic arthritis in intravenous drug users: 10-year retrospective analysis. J Clin Imaging Sci. 2026;16:18.",
+			"DOI": "https://doi.org/10.25259/JCIS_235_2025",
+			"Status": "Published"
+		},
+		{
+			"Citation": "Watson et al. Clinical Outcomes of Aspirin Plus Clopidogrel Versus Aspirin Plus Ticagrelor in Left Main Coronary Artery Stenting: A Retrospective Cohort Study",
+			"DOI": "",
+			"Status": "In preparation"
+		},
+		{
+			"Citation": "Lanehart et al. Lipomas Treated with Subcutaneous Injections of Cooled 0.9% Sodium Chloride: A Nonrandomized Clinical Trial",
+			"DOI": "",
+			"Status": "In preparation"
+		}
+	],
+	"Presentations": [],
 	"Projects": [
+		{
+			"Title": "Random Forest Models on Repeated Measures Data",
+			"Description": [
+				"Collaborated with researchers in the WVU agricultural sciences department to predict gold-standard cattle weights from a novel, lower-cost measurement method using repeated measures data",
+				"Developed novel random forest training system for time series and repeated measures data; designed custom validation pipeline showing it decreased overfitting and improved performance"
+			]
+		},
 		{
 			"Title": "Undergraduate Capstone: Polynomial-Time Causal Identification",
 			"Description": [
 				"Found bug in Microsoft Research's DoWhy library (~50% of significance tests invalid)",
 				"Implemented fix; developed version 60% faster than Microsoft's implementation"
-			]
-		},
-		{
-			"Title": "Publication: Glenohumeral Septic Arthritis Study",
-			"Description": [
-				"Vettiyil B, Ashikyan O, Ware L, Wen S, Frick M. 'Glenohumeral septic arthritis in intravenous drug users: 10-year retrospective analysis at a tertiary care center in Appalachia.' Journal of Clinical Imaging Science. Status: Revise and Resubmit"
 			]
 		}
 	],
