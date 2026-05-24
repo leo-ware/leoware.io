@@ -122,25 +122,6 @@ const CV = () => {
         ))}
       </Section>
 
-      {/* Presentations */}
-      {cv.Presentations.length > 0 && (
-        <Section title="Conference Presentations">
-          {cv.Presentations.map((pres, i) => (
-            <div key={i} className="mb-6 last:mb-0">
-              <p className="text-neutral-700 leading-relaxed">{pres.Title}</p>
-              <p className="text-sm text-neutral-600 mt-1">
-                {pres.Type} — {pres.Conference}
-              </p>
-              <div className="mt-2">
-                <span className="text-xs px-2 py-0.5 rounded-full font-medium bg-blue-100 text-blue-800">
-                  {pres.Status}
-                </span>
-              </div>
-            </div>
-          ))}
-        </Section>
-      )}
-
       {/* Projects */}
       <Section title="Research Projects">
         {cv.Projects.map((proj, i) => (
